@@ -1,0 +1,36 @@
+.dinamic_background {
+  --highlight: #9C78BF;
+  --background: #f2e0ff;
+  --backgroundBox: #ffffff;
+  display: flex;
+      align-items: center;
+      justify-content: center;
+  min-height: 100vh;
+}
+
+.signinbox {
+  background-color: var(--background);
+  display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2px;
+      justify-content: center;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.signinbox::before {
+  animation: animate 5s linear infinite;
+  background: linear-gradient(var(--background),var(--highlight),var(--background));
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+@keyframes animate {
+  0% {transform: translateY(-100%)}
+  100% {transform: translateY(100%);}
+}

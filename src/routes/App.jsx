@@ -6,6 +6,7 @@ import '../styles/Home.css'
 import Project_01 from '../projects/01-twitter-follow-card/main'
 import Project_02 from '../projects/02-triki-game/main'
 import Project_03 from '../projects/03-mouse-follower/main'
+import Project_04 from '../projects/04-dinamic-background/main'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/01-twitter-follow-card' element={<><GoBack/><Project_01 /></>} />
           <Route exact path='/02-triki-game' element={<><GoBack/><Project_02 /></>} />
           <Route exact path='/03-mouse-follower' element={<><GoBack/><Project_03 /></>} />
+          <Route exact path='/04-dinamic-background' element={<><Project_04 /><GoBack/></>} />
         </Routes>
       </BrowserRouter>
     </>
