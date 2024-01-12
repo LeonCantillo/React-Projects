@@ -1,0 +1,10 @@
+.GoBack {
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    position: absolute;
+        left: 20px;
+        top: 20px;
+    width: 50px;
+}
