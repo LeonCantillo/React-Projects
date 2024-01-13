@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../Home'
-import GoBack from '../goBack'
+import GoBack from '../GoBack'
 import '../styles/Home.css'
 // Projects components
 import Project_01 from '../projects/01-twitter-follow-card/main'
